@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Website / Profile Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+        <img src="Images/logo.png" alt="School Logo">
+      <h2>Jamaie Islami High School</h2>
+     
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Student Profile</a>
+        <a href="course.html">Courses</a>
+        <a href="contact.html">Contact</a>
+        <a href="logout.html">Log Out</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="head"> <h1>Jamaie Islami High School</h1></div>
+      </header>
+
+      <section class="stats">
+        <div class="card">800<br/><span>Total students</span></div>
+        <div class="card">500<br/><span>Male students</span></div>
+       <div class="card">300<br/><span>Female students</span></div>
+        <div class="card">30<br/><span>Total teachers</span></div>
+      </section>
+
+      <section>
+        <h2>Student Profile</h2>
+       <img src="Images/profile.jpg" alt="Student Photo" class="profile-img">
+       <p><strong>Name:</strong> Elham</p>
+       <p><strong>Age:</strong> 22</p>
+       <p><strong>Grade:</strong> 16</p>
+
+      <div id="contact-info" class="hidden">
+        <p id="email-info">Email: elham@gmail.com</p>
+        <p id="phone-info">Phone: (+93) 749 355 885</p>
+     </div>
+
+     <button id="btn-email">Show Email</button>
+     <button id="btn-phone">Show Phone</button>
+     <button id="btn-hide">Hide Contact Info</button>
+
+    <p>Status: <span id="status">Active</span></p>
+    <input type="text" id="status-input" placeholder="Enter new status">
+     <button id="update-status">Update Status</button>
+       </section>
+      
+    </main>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
